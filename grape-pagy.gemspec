@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
   spec.files         = `git ls-files -z`.split("\x0").reject {|f| f.start_with?('spec/') }
   spec.test_files    = `git ls-files -z -- spec/*`.split("\x0")
   spec.require_paths = ['lib']
-  spec.required_ruby_version = '>= 3.0'
+  spec.required_ruby_version = '>= 2.7.4'
 
   spec.add_runtime_dependency 'grape', '>= 1.5'
   spec.add_runtime_dependency 'pagy', '>= 5.4'
